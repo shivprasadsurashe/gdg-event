@@ -1,0 +1,20 @@
+{
+  "name": "pulseflow-ai-app",
+  "version": "1.0.0",
+  "description": "PulseFlow — Modern, Responsive AI Workspace & Real-time Analytics Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ai",
+    "saas",
+    "analytics",
+    "modern-ui",
+    "responsive",
+    "vanilla-css"
+  ],
+  "author": "PulseFlow Team",
+  "license": "MIT"
+}

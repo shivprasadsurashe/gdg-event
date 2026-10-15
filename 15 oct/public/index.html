@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Metadata -->
+  <title>PulseFlow — Intelligent Autonomous Workspace & Real-time Analytics</title>
+  <meta name="description" content="Orchestrate multi-agent workflows, stream real-time telemetry, and cut cloud compute costs by 64% with PulseFlow's intelligent unified control plane.">
+  <meta name="keywords" content="AI platform, autonomous agents, telemetry, cloud optimization, devops, real-time analytics">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PulseFlow — Autonomous Intelligence for Modern Engineering Teams">
+  <meta property="og:description" content="Unified control plane for multi-agent orchestration, live telemetry, and automated cost reduction.">
+  <meta property="og:url" content="https://pulseflow.ai">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%236366f1%22/><path d=%22M25 50h15l10-25 15 50 10-25h15%22 fill=%22none%22 stroke=%22white%22 stroke-width=%228%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-primary"></div>
+    <div class="ambient-orb orb-cyan"></div>
+    <div class="ambient-orb orb-fuchsia"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" id="brandLogo" aria-label="PulseFlow Home">
+        <div class="brand-icon-wrapper">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <span>PulseFlow</span>
+        <span class="brand-badge">v2.0</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#demo" class="nav-link" id="navLinkDemo">Live Demo</a></li>
+          <li><a href="#features" class="nav-link" id="navLinkFeatures">Features</a></li>
+          <li><a href="#calculator" class="nav-link" id="navLinkCalculator">ROI Calculator</a></li>
+          <li><a href="#playground" class="nav-link" id="navLinkPlayground">AI Optimizer</a></li>
+          <li><a href="#pricing" class="nav-link" id="navLinkPricing">Pricing</a></li>
+          <li><a href="#testimonials" class="nav-link" id="navLinkReviews">Testimonials</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Theme Switcher -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="btn btn-secondary btn-sm btn-open-demo" id="navBtnBookDemo">Schedule Demo</button>
+        <button class="btn btn-primary btn-sm btn-open-trial" id="navBtnGetStarted">Start Free Trial</button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+      <a href="#demo" class="nav-link">Live Demo</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#calculator" class="nav-link">ROI Calculator</a>
+      <a href="#playground" class="nav-link">AI Optimizer</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <div style="display:flex;gap:0.75rem;margin-top:0.75rem;">
+        <button class="btn btn-secondary btn-sm btn-open-demo" style="flex:1;">Schedule Demo</button>
+        <button class="btn btn-primary btn-sm btn-open-trial" style="flex:1;">Start Free Trial</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+      <div class="container">
+        <!-- Release Pill -->
+        <div class="hero-pill-badge" id="heroAnnouncementBadge" role="button" tabindex="0">
+          <span class="status-dot-pulse"></span>
+          <span>PulseFlow 2.0 Released: Autonomous Swarm Orchestrator</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="hero-title">
+          Autonomous intelligence for <br>
+          <span class="gradient-text">modern engineering teams</span>
+        </h1>
+
+        <!-- Hero Subtitle -->
+        <p class="hero-subtitle">
+          Orchestrate multi-agent swarms, stream real-time cluster telemetry, and cut cloud compute costs by 64% with an intelligent unified control plane.
+        </p>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg btn-open-trial" id="heroPrimaryCta">
+            <span>Start 14-Day Free Trial</span>
+            <span class="btn-icon-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </button>
+          <a href="#demo" class="btn btn-secondary btn-lg" id="heroSecondaryCta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Explore Live Sandbox</span>
+          </a>
+        </div>
+
+        <!-- Social Proof Avatars -->
+        <div class="hero-social-proof">
+          <div class="avatar-stack" aria-hidden="true">
+            <div class="avatar-item" style="background-image:url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces');"></div>
+            <div class="avatar-item" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces');"></div>
+            <div class="avatar-item" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces');"></div>
+            <div class="avatar-item" style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces');"></div>
+          </div>
+          <div class="social-proof-text">
+            <div class="social-proof-stars">★★★★★</div>
+            <div>Trusted by <strong>14,000+</strong> engineers at Stripe, Vercel, and Figma</div>
+          </div>
+        </div>
+
+        <!-- Live Interactive Hero Dashboard Sandbox -->
+        <div class="dashboard-preview-window" id="demo">
+          <!-- Window Chrome -->
+          <div class="window-chrome">
+            <div class="window-controls">
+              <span class="control-dot dot-red"></span>
+              <span class="control-dot dot-yellow"></span>
+              <span class="control-dot dot-green"></span>
+            </div>
+            <div class="window-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>pulseflow-cluster // us-east-1 // live telemetry</span>
+            </div>
+            <div class="window-live-pill">
+              <span class="status-dot-pulse"></span>
+              <span>LIVE CLUSTER</span>
+            </div>
+          </div>
+
+          <!-- Window Content -->
+          <div class="dashboard-content">
+            <!-- Telemetry Stat Cards -->
+            <div class="telemetry-cards-grid">
+              <!-- Active Agents -->
+              <div class="telemetry-card" id="cardActiveAgents">
+                <div class="telemetry-header">
+                  <span class="telemetry-label">Active Agents</span>
+                  <span class="telemetry-badge badge-green">↑ 18.4%</span>
+                </div>
+                <div class="telemetry-value" id="metricActiveAgents">1,424</div>
+                <div class="telemetry-footer">Autonomous tasks processing</div>
+              </div>
+
+              <!-- P99 Latency -->
+              <div class="telemetry-card" id="cardLatency">
+                <div class="telemetry-header">
+                  <span class="telemetry-label">P99 Edge Latency</span>
+                  <span class="telemetry-badge badge-cyan">Optimal</span>
+                </div>
+                <div class="telemetry-value" id="metricLatency">18.4ms</div>
+                <div class="telemetry-footer">Sub-20ms global edge SLA</div>
+              </div>
+
+              <!-- Token Efficiency -->
+              <div class="telemetry-card" id="cardEfficiency">
+                <div class="telemetry-header">
+                  <span class="telemetry-label">Token Efficiency</span>
+                  <span class="telemetry-badge badge-blue">Compressed</span>
+                </div>
+                <div class="telemetry-value" id="metricEfficiency">99.3%</div>
+                <div class="telemetry-footer">Zero redundant semantic tokens</div>
+              </div>
+
+              <!-- Cost Saved -->
+              <div class="telemetry-card" id="cardCostSaved">
+                <div class="telemetry-header">
+                  <span class="telemetry-label">Compute Saved</span>
+                  <span class="telemetry-badge badge-green">Live Accrual</span>
+                </div>
+                <div class="telemetry-value" id="metricCostSaved">$48,310</div>
+                <div class="telemetry-footer">Savings across GPU clusters</div>
+              </div>
+            </div>
+
+            <!-- Chart Visualization Area -->
+            <div class="chart-container-wrapper">
+              <div class="chart-header">
+                <div class="chart-title-area">
+                  <div class="chart-main-title">Telemetry Latency & Request Throughput</div>
+                  <div class="chart-subtitle">Real-time dynamic telemetry with interactive crosshair inspection</div>
+                </div>
+
+                <div class="chart-controls">
+                  <div class="time-range-group" role="group" aria-label="Time range selector">
+                    <button class="time-btn active" data-range="24h" id="btnRange24h">24h</button>
+                    <button class="time-btn" data-range="7d" id="btnRange7d">7d</button>
+                    <button class="time-btn" data-range="30d" id="btnRange30d">30d</button>
+                    <button class="time-btn" data-range="live" id="btnRangeLive">Live Stream</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Canvas and Interactive Tooltip -->
+              <div class="chart-canvas-box">
+                <canvas id="telemetryChart"></canvas>
+                <div class="chart-tooltip" id="chartTooltip"></div>
+              </div>
+
+              <!-- Interactive Controls Bar -->
+              <div class="chart-action-bar">
+                <span>Interactive sandbox: Hover over data curve to inspect point telemetry.</span>
+                <button class="btn btn-secondary btn-sm" id="simulateSpikeBtn" title="Test how the cluster absorbs a 50k query spike">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  <span>Simulate Load Spike</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbers / Metrics Banner -->
+    <section class="container" aria-label="Key Performance Metrics">
+      <div class="numbers-banner">
+        <div>
+          <div class="counter-value" data-target="99.99" data-suffix="%">0%</div>
+          <div class="counter-label">Global Cluster Availability</div>
+        </div>
+        <div>
+          <div class="counter-value" data-target="3.8" data-suffix="x">0x</div>
+          <div class="counter-label">Faster Deployment Velocity</div>
+        </div>
+        <div>
+          <div class="counter-value" data-target="64" data-suffix="%">0%</div>
+          <div class="counter-label">Average GPU & Cloud Savings</div>
+        </div>
+        <div>
+          <div class="counter-value" data-target="18" data-suffix="ms">0ms</div>
+          <div class="counter-label">P99 Global Edge Response</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Features Section (Tabs & Showcase) -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Architecture & Capabilities</span>
+          <h2 class="section-title">Engineered for mission-critical autonomy</h2>
+          <p class="section-subtitle">PulseFlow replaces fragmented monitoring scripts and manual orchestrations with a self-healing cognitive infrastructure layer.</p>
+        </div>
+
+        <!-- Feature Tabs Navigation -->
+        <div class="features-tabs-nav" role="tablist">
+          <button class="feature-tab-btn active" data-tab="tabSwarm" role="tab" id="tabBtnSwarm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            <span>Agent Swarm Orchestrator</span>
+          </button>
+          <button class="feature-tab-btn" data-tab="tabObservability" role="tab" id="tabBtnObservability">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <span>Real-Time Edge Telemetry</span>
+          </button>
+          <button class="feature-tab-btn" data-tab="tabCost" role="tab" id="tabBtnCost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="6" x2="12" y2="18"></line></svg>
+            <span>Autonomous Cost Governor</span>
+          </button>
+          <button class="feature-tab-btn" data-tab="tabSecurity" role="tab" id="tabBtnSecurity">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Zero-Trust Enterprise Guardrails</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Agent Swarm -->
+        <div class="feature-tab-content-panel active" id="tabSwarm" role="tabpanel">
+          <div class="feature-info-side">
+            <span class="feature-badge-small">Swarm Engine 2.0</span>
+            <h3 class="feature-info-title">Distribute complex workloads across thousands of asynchronous agents</h3>
+            <p class="feature-info-desc">Eliminate orchestration bottlenecks. PulseFlow dynamically spawns, balances, and monitors sub-agents with shared memory states and topological dependency graphs.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Automatic deadlock resolution and backpressure throttling</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Decentralized state synchronization across hybrid clouds</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Instant failover with zero loss of execution context</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-open-demo">Schedule Deep Dive Demo</button>
+          </div>
+          <div class="feature-preview-box">
+            <!-- Interactive Node Visualizer Mockup -->
+            <div style="text-align:left;font-family:var(--font-mono);font-size:0.8rem;">
+              <div style="color:var(--text-dim);margin-bottom:0.75rem;">// Swarm Execution Topology (Active)</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);">
+                <span>[Coordinator] agent-core-01</span>
+                <span style="color:var(--accent-emerald);">● STATUS_ROUTING</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);margin-left:1.5rem;">
+                <span>↳ [Worker] ast-parser-09</span>
+                <span style="color:var(--accent-cyan);">● EXEC_OPTIMIZING (12ms)</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);margin-left:1.5rem;">
+                <span>↳ [Worker] vector-embed-44</span>
+                <span style="color:var(--accent-cyan);">● CACHE_HIT (0.4ms)</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">
+                <span>[Consensus] raft-sentinel</span>
+                <span style="color:var(--primary-light);">● 100% SYNCED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Observability -->
+        <div class="feature-tab-content-panel" id="tabObservability" role="tabpanel">
+          <div class="feature-info-side">
+            <span class="feature-badge-small">Edge Observability</span>
+            <h3 class="feature-info-title">Sub-millisecond trace analytics from client click to LLM token</h3>
+            <p class="feature-info-desc">Deep observability built specifically for non-deterministic AI pipelines. Trace every token emission, cache validation, and edge gateway hop in real time.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>OpenTelemetry-native distributed tracing and OpenTracing support</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Live flamegraphs for recursive model reflection loops</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Automated anomaly detection with predictive alerting</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-open-demo">View Tracing Docs</button>
+          </div>
+          <div class="feature-preview-box">
+            <div style="font-family:var(--font-mono);font-size:0.75rem;text-align:left;line-height:1.7;color:var(--text-muted);">
+              <div><span style="color:var(--accent-emerald);">[2026-10-15 10:24:01]</span> <span style="color:var(--primary-light);">TRACE</span> 200 GET /api/v2/stream (p99: 14.2ms)</div>
+              <div><span style="color:var(--accent-emerald);">[2026-10-15 10:24:02]</span> <span style="color:var(--accent-cyan);">CACHE</span> Key: "auth_token_991" -&gt; HIT (0.1ms)</div>
+              <div><span style="color:var(--accent-emerald);">[2026-10-15 10:24:03]</span> <span style="color:var(--accent-fuchsia);">MODEL</span> Prompt compressed: 1,420 -&gt; 420 tokens</div>
+              <div><span style="color:var(--accent-emerald);">[2026-10-15 10:24:04]</span> <span style="color:var(--primary-light);">RESOLVE</span> Edge node [iad-02] delivered payload</div>
+              <div style="margin-top:0.75rem;color:var(--accent-emerald);font-weight:700;">● 0 Anomaly alerts detected across 48 clusters</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Cost Governor -->
+        <div class="feature-tab-content-panel" id="tabCost" role="tabpanel">
+          <div class="feature-info-side">
+            <span class="feature-badge-small">FinOps Autopilot</span>
+            <h3 class="feature-info-title">Cut runaway cloud and GPU inference costs by over 60%</h3>
+            <p class="feature-info-desc">PulseFlow continuously audits LLM token usage, auto-routes cheap deterministic queries to quantized edge models, and aggressively caches repetitive contexts.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Dynamic model routing: fallback to smaller weights when confidence &gt;98%</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Semantic deduplication eliminates duplicate vector inferences</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Hard spend limits with programmatic graceful degradation</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-open-demo">Run Cost Audit</button>
+          </div>
+          <div class="feature-preview-box">
+            <div style="text-align:left;">
+              <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.35rem;">Dynamic Model Routing Efficiency</div>
+              <div style="background:var(--bg-surface);border-radius:var(--radius-sm);height:12px;overflow:hidden;display:flex;margin-bottom:1rem;">
+                <div style="width:65%;background:var(--accent-emerald);" title="Quantized Edge (65%)"></div>
+                <div style="width:25%;background:var(--primary);" title="Mid-Tier Flash (25%)"></div>
+                <div style="width:10%;background:var(--accent-fuchsia);" title="Heavy Frontier LLM (10%)"></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:0.75rem;font-family:var(--font-mono);color:var(--text-dim);margin-bottom:1.5rem;">
+                <span>■ Edge ($0.0001)</span>
+                <span>■ Flash ($0.001)</span>
+                <span>■ Frontier ($0.015)</span>
+              </div>
+              <div style="background:var(--bg-surface);padding:1rem;border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">
+                <div style="font-size:0.8rem;color:var(--text-muted);">Simulated Monthly Compute Burn</div>
+                <div style="font-size:1.75rem;font-weight:800;color:var(--accent-emerald);font-family:var(--font-mono);">$14,200 <span style="font-size:0.9rem;color:var(--text-dim);font-weight:400;text-decoration:line-through;">$41,800</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Security -->
+        <div class="feature-tab-content-panel" id="tabSecurity" role="tabpanel">
+          <div class="feature-info-side">
+            <span class="feature-badge-small">Zero-Trust Guardrails</span>
+            <h3 class="feature-info-title">SOC2 Type II, HIPAA, and GDPR compliant autonomous execution</h3>
+            <p class="feature-info-desc">Safeguard proprietary IP. Automated PII scrubbing, prompt injection firewalls, and cryptographic audit logs ensure full compliance with zero leaks.</p>
+            <ul class="feature-bullets">
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Real-time input/output sanitization with regex & transformer heuristics</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Immutable append-only audit trail backed by tamper-evident hashing</span>
+              </li>
+              <li class="feature-bullet-item">
+                <span class="bullet-check-icon">✓</span>
+                <span>Role-based agent access control (RBAC) and scoped API keys</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-open-demo">Request Security Whitepaper</button>
+          </div>
+          <div class="feature-preview-box">
+            <div style="text-align:left;font-size:0.85rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);">
+                <span>PII Redaction Engine</span>
+                <span style="color:var(--accent-emerald);font-weight:700;">ENFORCED</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);">
+                <span>Prompt Injection Shield</span>
+                <span style="color:var(--accent-emerald);font-weight:700;">ACTIVE (0.01% Block)</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);margin-bottom:0.5rem;border:1px solid var(--border-subtle);">
+                <span>Air-Gapped Sandbox Execution</span>
+                <span style="color:var(--accent-emerald);font-weight:700;">ISOLATED</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface);border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">
+                <span>SOC2 Compliance Monitor</span>
+                <span style="color:var(--accent-cyan);font-weight:700;">PASSED 100%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary 3-Card Grid -->
+        <div class="features-cards-grid">
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h3>Distributed Ephemeral Memory</h3>
+            <p>Share context seamlessly across 10,000 parallel workers with millisecond LRU vector caches and cryptographic isolation.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+            </div>
+            <h3>Self-Healing Compute Pods</h3>
+            <p>When an upstream inference provider encounters rate limits or errors, PulseFlow automatically reroutes tasks with zero downtime.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <h3>Developer First CLI & SDK</h3>
+            <p>Deploy multi-agent pipelines with 3 lines of TypeScript or Python. Native integration with GitHub Actions, Terraform, and Docker.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive ROI & Cost Calculator Section -->
+    <section class="calculator-section" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive ROI Estimator</span>
+          <h2 class="section-title">Calculate your team's annual savings</h2>
+          <p class="section-subtitle">Adjust the sliders below to calculate how much engineering time and compute spend PulseFlow will save your organization.</p>
+        </div>
+
+        <div class="calculator-card-wrapper">
+          <!-- Inputs Side -->
+          <div class="calc-inputs-side">
+            <!-- Team Size Slider -->
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-title">Engineering Team Size</span>
+                <span class="slider-value-display" id="teamSizeDisplay">25 engineers</span>
+              </div>
+              <input type="range" min="1" max="150" value="25" class="range-slider" id="teamSizeSlider" aria-label="Team Size Slider">
+            </div>
+
+            <!-- Developer Hourly Cost Slider -->
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-title">Avg. Developer Fully-Loaded Hourly Rate</span>
+                <span class="slider-value-display" id="hourlyRateDisplay">$85/hr</span>
+              </div>
+              <input type="range" min="40" max="220" step="5" value="85" class="range-slider" id="hourlyRateSlider" aria-label="Hourly Rate Slider">
+            </div>
+
+            <!-- Manual Hours Slider -->
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-title">Hours Spent on Manual Ops / Churn per Week</span>
+                <span class="slider-value-display" id="manualHoursDisplay">6 hrs/wk</span>
+              </div>
+              <input type="range" min="2" max="18" value="6" class="range-slider" id="manualHoursSlider" aria-label="Manual Hours Slider">
+            </div>
+
+            <p style="font-size:0.85rem;color:var(--text-dim);margin-top:1.5rem;">
+              * Calculations based on documented benchmarks across 120 enterprise deployments reducing repetitive manual orchestration by 74%.
+            </p>
+          </div>
+
+          <!-- Dynamic Output Side -->
+          <div class="calc-results-card">
+            <div class="roi-highlight-box">
+              <div class="roi-label">Projected Annual Savings</div>
+              <div class="roi-big-value" id="annualSavingsDisplay">$365,160</div>
+            </div>
+
+            <div class="roi-stats-mini-grid">
+              <div>
+                <div class="roi-mini-stat-title">Hours Recovered / Year</div>
+                <div class="roi-mini-stat-val" id="hoursSavedDisplay">4,296 hrs/yr</div>
+              </div>
+              <div>
+                <div class="roi-mini-stat-title">Projected ROI Multiple</div>
+                <div class="roi-mini-stat-val" id="roiMultiplierDisplay" style="color:var(--accent-emerald);">24.8x ROI</div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-open-demo" style="width:100%;" id="btnClaimRoi">
+              <span>Book Custom ROI Audit</span>
+              <span class="btn-icon-right">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive AI Prompt Optimizer Playground -->
+    <section class="playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive AI Optimizer</span>
+          <h2 class="section-title">Test the AST token compression engine</h2>
+          <p class="section-subtitle">Experience how PulseFlow automatically strips redundant tokens, injects structured execution guardrails, and drops inference latency in real time.</p>
+        </div>
+
+        <div class="playground-box">
+          <div class="playground-controls-bar">
+            <!-- Preset Prompt Chips -->
+            <div class="prompt-chips-wrapper">
+              <span style="font-size:0.8rem;color:var(--text-dim);margin-right:0.25rem;">Presets:</span>
+              <button class="prompt-chip" data-preset="coldstart">AWS Cold Starts</button>
+              <button class="prompt-chip" data-preset="sql">Zero-Downtime SQL</button>
+              <button class="prompt-chip" data-preset="orchestration">PR Review Swarm</button>
+            </div>
+
+            <!-- Optimization Goal Selector -->
+            <div>
+              <select class="form-select" id="playgroundGoalSelect" style="width:auto;padding:0.35rem 0.75rem;font-size:0.825rem;" aria-label="Optimization Goal">
+                <option value="efficiency">Goal: Maximum Token Efficiency (-40%)</option>
+                <option value="latency">Goal: Low-Latency Fast Inference</option>
+                <option value="cost">Goal: Minimal Compute Burn</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Prompt Input -->
+          <div class="form-group">
+            <textarea class="form-textarea" id="playgroundPromptInput" rows="3" placeholder="Type or select a task prompt to optimize with PulseFlow..." aria-label="Prompt Input">Investigate cold start latency spikes in AWS Lambda functions handling authentication JWT decoding during 9 AM peak traffic surge.</textarea>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+            <button class="btn btn-primary" id="runOptimizerBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Run AI Optimization</span>
+            </button>
+
+            <span style="font-size:0.8rem;color:var(--text-dim);">Live API Connected (Simulated Streaming Ready)</span>
+          </div>
+
+          <!-- Output Box -->
+          <div class="playground-output-card">
+            <div class="output-header">
+              <span>// OPTIMIZED EXECUTION MANIFEST</span>
+              <button class="btn btn-ghost btn-sm" id="copyOptimizedBtn" style="padding:2px 8px;font-size:0.75rem;">Copy Output</button>
+            </div>
+            <div class="output-code-area" id="playgroundOutputCode">[SYSTEM: STRICT_EXECUTION mode=low_latency format=compact_json]
+Target: Investigate cold start latency spikes in AWS Lambda auth JWT decoding.
+Output: Direct actionable telemetry schema with zero conversational boilerplate. Cache validation active.</div>
+
+            <!-- Live Metrics Comparison -->
+            <div class="optimization-stats-row">
+              <span class="stat-tag">Original Tokens: <strong id="statOriginalTokens">24</strong></span>
+              <span class="stat-tag">Optimized Tokens: <strong id="statOptimizedTokens">14</strong></span>
+              <span class="stat-tag">Token Compression: <strong id="statReductionPct">-42%</strong></span>
+              <span class="stat-tag">Edge Latency: <strong style="color:var(--accent-cyan);">18ms</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials & Customer Feedback -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Customer Stories</span>
+          <h2 class="section-title">Loved by engineering leaders worldwide</h2>
+          <p class="section-subtitle">Hear why top infrastructure and AI teams rely on PulseFlow to govern their mission-critical operations.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "PulseFlow saved us over $210,000 on OpenAI and Anthropic API inference bills in our first quarter alone. The automatic token deduplication is nothing short of magic."
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <div class="author-avatar" style="background-image:url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces');"></div>
+              <div>
+                <div class="author-name">Sarah Chen</div>
+                <div class="author-role">VP of Infrastructure, CloudScale</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "We switched from manual LangChain spaghetti to PulseFlow’s swarm orchestrator. What previously took 3 platform engineers full-time now runs autonomously without a hiccup."
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <div class="author-avatar" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces');"></div>
+              <div>
+                <div class="author-name">Marcus Vance</div>
+                <div class="author-role">Staff Platform Architect, FinEdge</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "The real-time telemetry and sub-20ms P99 edge routing gave our enterprise customers the reliability guarantee we needed to close seven-figure Fortune 100 contracts."
+              </p>
+            </div>
+            <div class="testimonial-author-row">
+              <div class="author-avatar" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces');"></div>
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-role">Chief Technology Officer, SynthAI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Predictable Plans</span>
+          <h2 class="section-title">Transparent pricing that scales with you</h2>
+          <p class="section-subtitle">Get started with our free developer tier or deploy enterprise-grade multi-cluster clusters with high availability SLAs.</p>
+        </div>
+
+        <!-- Billing Toggle -->
+        <div class="pricing-billing-toggle">
+          <span class="toggle-label active" id="labelMonthly">Monthly Billing</span>
+          <label class="switch-control" for="billingCycleToggle">
+            <input type="checkbox" id="billingCycleToggle" aria-label="Toggle annual billing discount">
+            <span class="switch-slider"></span>
+          </label>
+          <span class="toggle-label" id="labelAnnual">Annual Billing</span>
+          <span class="discount-pill">Save 25% + 2 Mo Free</span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-cards-grid">
+          <!-- Starter Plan -->
+          <div class="pricing-card" id="pricingStarter">
+            <div>
+              <h3 class="plan-name">Developer</h3>
+              <p class="plan-desc">Perfect for independent developers and fast prototype experiments.</p>
+              <div class="plan-price-row">
+                <span class="price-currency">$</span>
+                <span class="price-amount">0</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Up to 5 concurrent autonomous agents</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>10,000 monthly telemetry traces</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Community Discord support</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Standard REST & WebSocket APIs</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary btn-open-trial" style="width:100%;">Get Started Free</button>
+          </div>
+
+          <!-- Pro Plan (Featured) -->
+          <div class="pricing-card featured" id="pricingPro">
+            <span class="popular-badge">Most Popular</span>
+            <div>
+              <h3 class="plan-name">Professional</h3>
+              <p class="plan-desc">For growing startups and engineering teams needing real-time performance.</p>
+              <div class="plan-price-row">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="pricePro">49</span>
+                <span class="price-period">/ seat / month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Unlimited concurrent autonomous agents</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Real-time sub-20ms edge telemetry stream</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Automated token compression & cache routing</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Priority 24/7 Slack & email support</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>99.95% uptime SLA</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-primary btn-open-trial" style="width:100%;">Start 14-Day Pro Trial</button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="pricing-card" id="pricingEnterprise">
+            <div>
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">For organizations with custom compliance, dedicated VPC, and SLA requirements.</p>
+              <div class="plan-price-row">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="priceEnterprise">199</span>
+                <span class="price-period">/ seat / month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dedicated VPC / On-Premise Air-Gapped deployment</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>SOC2 Type II, HIPAA & GDPR compliance pack</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dedicated Customer Success Architect</span>
+                </li>
+                <li class="plan-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Custom LLM fine-tuning & vector embedding</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary btn-open-demo" style="width:100%;">Talk to Solutions Engineer</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="container" style="margin-bottom:6rem;">
+      <div style="background:linear-gradient(135deg, var(--bg-surface-elevated) 0%, var(--bg-surface) 100%);border:1px solid var(--border-glow);border-radius:var(--radius-lg);padding:4rem 2rem;text-align:center;box-shadow:var(--shadow-glow);position:relative;overflow:hidden;">
+        <span class="section-tag" style="margin-bottom:1.5rem;">Ready to Accelerate?</span>
+        <h2 style="font-size:clamp(2rem, 4vw, 3rem);margin-bottom:1rem;">Supercharge your autonomous infrastructure today</h2>
+        <p style="color:var(--text-muted);max-width:600px;margin:0 auto 2.5rem;font-size:1.1rem;">
+          Join thousands of engineering teams deploying resilient, low-latency agent workflows with PulseFlow.
+        </p>
+        <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+          <button class="btn btn-primary btn-lg btn-open-trial">
+            <span>Get Started Free in 2 Minutes</span>
+            <span class="btn-icon-right"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </button>
+          <button class="btn btn-secondary btn-lg btn-open-demo">Book a Live Architecture Review</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand-side">
+          <a href="#" class="brand-logo" aria-label="PulseFlow Home">
+            <div class="brand-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <span>PulseFlow</span>
+          </a>
+          <p>
+            Autonomous intelligence & real-time telemetry control plane for modern cloud engineering teams.
+          </p>
+        </div>
+
+        <!-- Links 1 -->
+        <div class="footer-nav-col">
+          <h4>Product</h4>
+          <ul class="footer-links-list">
+            <li><a href="#demo">Live Sandbox</a></li>
+            <li><a href="#features">Swarm Orchestration</a></li>
+            <li><a href="#calculator">ROI Calculator</a></li>
+            <li><a href="#playground">AST Optimizer</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div class="footer-nav-col">
+          <h4>Developers</h4>
+          <ul class="footer-links-list">
+            <li><a href="/api/health" target="_blank">System API Health</a></li>
+            <li><a href="/api/metrics" target="_blank">Live JSON Telemetry</a></li>
+            <li><a href="#demo">Documentation</a></li>
+            <li><a href="#features">Security & Compliance</a></li>
+            <li><a href="#pricing">Changelog v2.0</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-nav-col">
+          <h4>Stay Ahead</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">
+            Subscribe to our weekly engineering dispatches on agent architecture and token economics.
+          </p>
+          <form id="footerNewsletterForm">
+            <div class="footer-newsletter-box">
+              <input type="email" class="form-input" id="footerEmailInput" placeholder="dev@company.com" required aria-label="Email address for newsletter">
+              <button type="submit" class="btn btn-primary" id="footerNewsletterBtn" aria-label="Subscribe to newsletter">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 PulseFlow Technologies Inc. All rights reserved. Built with precision.
+        </div>
+        <div class="footer-system-status">
+          <span class="status-dot-pulse"></span>
+          <span>All Global Telemetry Systems Operational (100%)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Demo Booking / Trial Modal -->
+  <div class="modal-overlay" id="demoModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-tag" style="margin-bottom:0.5rem;">Fast-Track Onboarding</span>
+        <h3 class="modal-title" id="modalTitle">Schedule an Architecture Demo</h3>
+        <p class="modal-subtitle">Meet with our principal distributed systems engineers for a personalized cluster walkthrough.</p>
+      </div>
+
+      <form id="demoBookingForm" novalidate>
+        <!-- Name -->
+        <div class="form-group">
+          <label class="form-label" for="demoName">Full Name *</label>
+          <input type="text" class="form-input" id="demoName" placeholder="e.g. Alex Morgan" required>
+          <div class="form-error-msg">Please enter your name.</div>
+        </div>
+
+        <!-- Business Email -->
+        <div class="form-group">
+          <label class="form-label" for="demoEmail">Work Email *</label>
+          <input type="email" class="form-input" id="demoEmail" placeholder="alex@company.com" required>
+          <div class="form-error-msg">Please provide a valid work email address.</div>
+        </div>
+
+        <!-- Team Size -->
+        <div class="form-group">
+          <label class="form-label" for="demoCompanySize">Engineering Team Size *</label>
+          <select class="form-select" id="demoCompanySize" required>
+            <option value="" disabled selected>Select team size</option>
+            <option value="1-10">1 - 10 engineers</option>
+            <option value="11-50">11 - 50 engineers</option>
+            <option value="51-200">51 - 200 engineers</option>
+            <option value="200+">200+ engineers (Enterprise)</option>
+          </select>
+          <div class="form-error-msg">Please select your organization size.</div>
+        </div>
+
+        <!-- Primary Interest -->
+        <div class="form-group">
+          <label class="form-label" for="demoInterest">Primary Area of Interest</label>
+          <select class="form-select" id="demoInterest">
+            <option value="Autonomous Swarm Orchestration">Autonomous Swarm Orchestration</option>
+            <option value="GPU & Token Cost Reduction">GPU & Token Cost Reduction</option>
+            <option value="Real-Time Edge Telemetry">Real-Time Edge Telemetry</option>
+            <option value="SOC2 & Enterprise Guardrails">SOC2 & Enterprise Guardrails</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="demoSubmitBtn" style="width:100%;margin-top:0.75rem;">
+          <span>Reserve Priority Session</span>
+          <span class="btn-icon-right"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/toast.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/playground.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
